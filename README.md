@@ -1,6 +1,6 @@
 # EMU SP-1200 #
 
-KiCad schematic of the original E-MU SP-1200 Drumsampler. 
+BOM, KiCad schematic of the original E-MU SP-1200 Drumsampler. 
 
 ### Goal ###
 
@@ -10,6 +10,25 @@ But >7000 Euros for a second hand SP-1200 is too much.
 There are already many people working on clones which is awesome, but unfortunately no schematic or PCB is open sourced to enable more of us DIY-ers to save a lot of time on doing the same thing.
 
 Therefore I would like to share at least my hours spend on creating a digital schematic to use by everyone so anyone has a good head start on recreating this icon in the truest form.
+
+
+### Current Challenge ###
+
+Finding a way to dump the IC infomration of 2 PROMs and PAL Digital ICs from an original SP-1200 is an important step, else building the digital section even using FPGA won't be possible.
+
+These are the involved chips:
+
+```
+Control Sequencer    - IC67  74S288 UC 
+Register Files LSB   - IC88  74S288 LOG 
+Sound Memory Intfc   - IC69  PAL12L6
+Sequencer Memory     - IC62  PAL12H6
+
+Program Memory       - IC130 PAL16R4 (Z80 RAM PAL)
+ROM Memory           - IC148 PAL16R8 (DRAM PAL)
+```
+
+### Thanks ###
 
 I do want to give a big shout out to all the great people who are also working on this as solo missions and have inspired me to also start on a true recreation:
 
@@ -31,20 +50,13 @@ Not an SP, but also great recreators:
 Please get in touch by adding a PR or if you want to help recreate a true clone with all the origional parts or can help with recreating the MCU code!
 
 
-### Status ###
-
 #### Done ####
 - Digitized the original BOM into a more convient Excel including Mouser/Ebay links.
 
 #### Todo ####
-- Finalise the Mouser BOM
+- Finalise the sourcing options in the BOM like Mouser/Ebay
+- Find Dumps of 2 Bipolar PROMs and 4 PAL ICs (the first 4 are also present in an SP-12)
 - Create the schematic in KiCad
 - Create the Mainboard and Panelboard PCB in KiCad
 - Create a PCB Front Panel
-- For 2 Bipolar PROMs the data isn’t available to burn them with:
-```
-IC67 74S288 UC PROM (Sequencer section)
-IC88 74S288 Log PROM (Register File LSBs section)
-```
 
-- If the PROMs data can't be sourced the FPGA route is the alternative step
