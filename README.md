@@ -50,6 +50,12 @@ Not an SP, but also great recreators:
 Please get in touch by adding a PR or if you want to help recreate a true clone with all the origional parts or can help with recreating the MCU code!
 
 
+### Digital audio path documentation###
+1. [Python Pitch emulation of the SP-12 & SP-1200 signal chain](https://github.com/mwcm/pitcher)
+2. [Stanford Slides Physical and Behavioral Circuit Modeling of the SP-12 Sampler](https://ccrma.stanford.edu/~dtyeh/sp12/yeh2007icmcsp12slides.pdf)
+3. [Stanford PDF Physical and Behavioral Circuit Modeling of the SP-12 Sampler](https://ccrma.stanford.edu/~dtyeh/papers/yeh07_icmc_sp12.pdf)
+
+
 #### Done ####
 - Digitized the original BOM into a more convient Excel including Mouser/Ebay links.
 
