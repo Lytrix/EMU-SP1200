@@ -1,6 +1,6 @@
 # EMU SP-1200 #
 
-BOM, KiCad schematic of the original E-MU SP-1200 Drumsampler. 
+BOM and schematic of the original E-MU SP-1200 Drumsampler. 
 
 ### Goal ###
 
@@ -9,12 +9,12 @@ But >7000 Euros for a second hand SP-1200 is too much.
 
 There are already many people working on clones which is awesome, but unfortunately no schematic or PCB is open sourced to enable more of us DIY-ers to save a lot of time on doing the same thing.
 
-Therefore I would like to share at least my hours spend on creating a digital schematic to use by everyone so anyone has a good head start on recreating this icon in the truest form.
+Therefore I would like to share at least my hours spend on creating a digital BOM to use by everyone so anyone has a good head start on recreating this icon in the truest form.
 
 
 ### Current Challenge ###
 
-Finding a way to dump the IC infomration of 2 PROMs and PAL Digital ICs from an original SP-1200 is an important step, else building the digital section even using FPGA won't be possible.
+Finding a way to dump the IC information of 2 PROMs and 4 PAL Digital ICs from an original SP-1200 is an important step even for a FPGA version.
 
 These are the involved chips:
 
@@ -37,7 +37,7 @@ I do want to give a big shout out to all the great people who are also working o
 3. https://www.instagram.com/oscthug/
 4. https://www.islainstruments.com
 5. https://low-hiss.com
-6. Berhinger?
+6. Behringer?
 7. Me, but hopefully soon together with more enthousiasts!
 
 Some youtube examples:
