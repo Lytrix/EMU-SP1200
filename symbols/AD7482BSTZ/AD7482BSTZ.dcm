@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AD7482BSTZ
+D AD7482BSTZ, 12 bit ADC, Parallel, 48-Pin LQFP
+K
+F https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-DGA17/1031600.pdf
+$ENDCMP
+#
+#End Doc Library

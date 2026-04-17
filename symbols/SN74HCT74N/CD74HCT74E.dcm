@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CD74HCT74E
+D High Speed CMOS Logic Dual Positive-Edge-Triggered D Flip-Flops with Set and Reset
+K
+F http://www.ti.com/lit/gpn/cd74hct74
+$ENDCMP
+#
+#End Doc Library

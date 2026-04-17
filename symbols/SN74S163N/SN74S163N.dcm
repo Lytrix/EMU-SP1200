@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SN74S163N
+D SYNCHRONOUS 4-BIT COUNTERS
+K
+F http://www.ti.com/lit/gpn/SN74S163
+$ENDCMP
+#
+#End Doc Library

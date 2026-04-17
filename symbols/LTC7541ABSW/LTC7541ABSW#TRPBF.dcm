@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LTC7541ABSW#TRPBF
+D Digital to Analog Converters - DAC Imp Ind St&ard CMOS 12-B Mult DAC
+K
+F https://www.analog.com/media/en/technical-documentation/data-sheets/lt7541a.pdf
+$ENDCMP
+#
+#End Doc Library

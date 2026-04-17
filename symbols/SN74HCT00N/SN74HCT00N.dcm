@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SN74HCT00N
+D Quad 2 i/p NAND gate,SN74HCT00N DIP14
+K
+F http://www.ti.com/lit/gpn/sn74hct00
+$ENDCMP
+#
+#End Doc Library

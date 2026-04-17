@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CD74HCT42E
+D CD74HCT42E(X 25)
+K
+F http://www.ti.com/lit/ds/symlink/cd74hc42.pdf
+$ENDCMP
+#
+#End Doc Library

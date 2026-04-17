@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SN74HCT273N
+D OCTAL D-TYPE FLIP-FLOPS WITH CLEAR
+K
+F http://www.ti.com/lit/gpn/sn74hct273
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AD7524JNZ
+D AD7524JNZ, 8 bit-Bit DAC 4Msps, Parallel, 16-Pin PDIP
+K
+F https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-1/DSA-1819.pdf
+$ENDCMP
+#
+#End Doc Library
