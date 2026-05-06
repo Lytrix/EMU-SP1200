@@ -102,7 +102,7 @@ These are the involved chips:
 
 ```
 Control Sequencer    - IC67  74S288 UC 
-Register Files LSB   - IC88  74S288 LOG
+Register Files LSB   - IC88  74S288 LOG (FOUND!)
 Sound Memory Intfc   - IC69  PAL12L6
 Sequencer Memory     - IC62  PAL12H6
 
@@ -111,7 +111,7 @@ ROM Memory           - IC148 PAL16R8 (DRAM PAL)
 ```
 
 Update:
-Thanks to [Stefan Huebner](https://huebnerie.de/blog) IC88 PROM bin is available for future repairs. It is shared in this repo.
+Thanks to [Stefan Huebner](https://huebnerie.de/blog) IC88 PROM bin is available for future repairs. It is shared in this repo. Most others can be bought at Syntaur, but the preference is to obain the bin and jet files and no availability of IC67 unfortunately.
 
 ### Thanks ###
 
