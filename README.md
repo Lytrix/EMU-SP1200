@@ -96,7 +96,6 @@ In theory I can directly connect the 12 ADC out lines to the 12 DAC lines so kee
 
 
 Finding a way to dump the IC information of 2 PROMs and PAL Digital ICs from an original SP-1200 is an important step, else building the digital section even using FPGA won't be possible.
->>>>>>> 0a91861 (Added IC88 bin PROM)
 
 These are the involved chips:
 
@@ -111,7 +110,9 @@ ROM Memory           - IC148 PAL16R8 (DRAM PAL)
 ```
 
 Update:
-Thanks to [Stefan Huebner](https://huebnerie.de/blog) IC88 PROM bin is available for future repairs. It is shared in this repo. Most others can be bought at Syntaur, but the preference is to obain the bin and jet files and no availability of IC67 unfortunately.
+Thanks to [Stefan Huebner](https://huebnerie.de/blog) IC88 PROM bin is available for future repairs and thanks to [Vijay Weemhoff](figivijay.com) I finally got a few of these missing chips at least found at Syntaur which are added as links into the BOM!
+
+The preference is still to obain the bin and jet files and no availability of IC67 unfortunately.
 
 ### Thanks ###
 
