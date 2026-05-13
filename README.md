@@ -16,9 +16,8 @@ Therefore I would like to share at least my hours spend on creating a digital BO
 After gaining more experience with ADC/DAC I will try to only create the Analog to Digital and Digital to Analog conversion logic with changing the sample speed option.
 This way I can build a small 12 bit eurorack module to convert audio in realtime. Similar to the Xaoc 8 bit devices and what epromfoundry build via USB. 
 
-<<<<<<< HEAD
 Finding a way to dump the IC information of 2 PROMs and 4 PAL Digital ICs from an original SP-1200 is an important step even for a FPGA version.
-=======
+
 From IC72 74HCT504 12 bits of audio are created. which can be buffered and put back at a lower speed to the DAC
 UCNT1.D is the bit 1 for the uC State counter.
 
@@ -95,24 +94,34 @@ In theory I can directly connect the 12 ADC out lines to the 12 DAC lines so kee
 
 
 
-Finding a way to dump the IC information of 2 PROMs and PAL Digital ICs from an original SP-1200 is an important step, else building the digital section even using FPGA won't be possible.
+Finding a way to dump the IC information of 2 PROMs and PAL Digital ICs from an original SP-1200 is an important step, else building the digital section even using FPGA won't be possible. 
+
+Luckily there are some ways to go further on this.
+https://github.com/DuPAL-PAL-DUmper is an opensource solution to fire off all different combinations of logic voltages on to a PAL IC. It might be able to get most of the expected behaviour. But it will still need to be written into logic code to burn back to an IC AND it will probably only get 80% of the logic, because it does not know which pins are feedback on themselves (like latches etc) which will require diving into the schematic and real machine to determine what expected states are to finalize it.
+
 
 These are the involved chips:
 
 ```
-Control Sequencer    - IC67  74S288 UC 
+Control Sequencer    - IC67  74S288 UC (Need to be read with a T48 programmer)
 Register Files LSB   - IC88  74S288 LOG (FOUND!)
-Sound Memory Intfc   - IC69  PAL12L6
-Sequencer Memory     - IC62  PAL12H6
+Sound Memory Intfc   - IC69  PAL12L6 (Only in SP-12, so not required)
+Sequencer Memory     - IC62  PAL12H6 (need to be brute force read and converted)
 
-Program Memory       - IC130 PAL16R4 (Z80 RAM PAL)
-ROM Memory           - IC148 PAL16R8 (DRAM PAL)
+Program Memory       - IC130 PAL16R4 (Can be simplified with other logic code by using SRAM instead of complex multiplexing 4416 RAM)
+ROM Memory           - IC148 PAL16R8 (Only in SP-12, so not required)
 ```
 
 Update:
 Thanks to [Stefan Huebner](https://huebnerie.de/blog) IC88 PROM bin is available for future repairs and thanks to [Vijay Weemhoff](figivijay.com) I finally got a few of these missing chips at least found at Syntaur which are added as links into the BOM!
 
 The preference is still to obain the bin and jet files and no availability of IC67 unfortunately.
+
+### Plan ###
+
+[IC62_PAL12H6_Retrieval_Strategy](Plan/IC62_PAL12H6_Retrieval_Strategy.md)
+[IC67_74S288_Retrieval_Strategy](Plan/IC67_74S288_Retrieval_Strategy.md)
+[IC130_SRAM_Conversion_Strategy](Plan/IC130_SRAM_Conversion_Strategy.md)
 
 ### Thanks ###
 
@@ -151,4 +160,3 @@ Please get in touch by adding a PR or if you want to help recreate a true clone 
 - Create the schematic in KiCad
 - Create the Mainboard and Panelboard PCB in KiCad
 - Create a PCB Front Panel
-
