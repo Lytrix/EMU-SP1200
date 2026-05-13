@@ -119,9 +119,9 @@ The preference is still to obain the bin and jet files and no availability of IC
 
 ### Plan ###
 
-[IC62_PAL12H6_Retrieval_Strategy](Plan/IC62_PAL12H6_Retrieval_Strategy.md)
-[IC67_74S288_Retrieval_Strategy](Plan/IC67_74S288_Retrieval_Strategy.md)
-[IC130_SRAM_Conversion_Strategy](Plan/IC130_SRAM_Conversion_Strategy.md)
+1. [IC62_PAL12H6_Retrieval_Strategy](Plan/IC62_PAL12H6_Retrieval_Strategy.md)
+2. [IC67_74S288_Retrieval_Strategy](Plan/IC67_74S288_Retrieval_Strategy.md)
+3. [IC130_SRAM_Conversion_Strategy](Plan/IC130_SRAM_Conversion_Strategy.md)
 
 ### Thanks ###
 
