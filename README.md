@@ -103,10 +103,10 @@ https://github.com/DuPAL-PAL-DUmper is an opensource solution to fire off all di
 These are the involved chips:
 
 ```
-Control Sequencer    - IC67  74S288 UC (Need to be read with a T48 programmer)
-Register Files LSB   - IC88  74S288 LOG (FOUND!)
+Control Sequencer    - IC67  74S288 UC (Need to be read with a T48/TL866 programmer)
+Register Files LSB   - IC88  74S288 LOG (FOUND by Stefan)
 Sound Memory Intfc   - IC69  PAL12L6 (Only in SP-12, so not required)
-Sequencer Memory     - IC62  PAL12H6 (need to be brute force read and converted)
+Sequencer Memory     - IC62  PAL12H6 (FOUND by Vijay)
 
 Program Memory       - IC130 PAL16R4 (Can be simplified with other routing logic code by using SRAM instead of complex multiplexing 4416 RAM, see Plan below)
 ROM Memory           - IC148 PAL16R8 (Only in SP-12, so not required)
