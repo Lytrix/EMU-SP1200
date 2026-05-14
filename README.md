@@ -97,7 +97,7 @@ In theory I can directly connect the 12 ADC out lines to the 12 DAC lines so kee
 Finding a way to dump the IC information of 2 PROMs and PAL Digital ICs from an original SP-1200 is an important step, else building the digital section even using FPGA won't be possible. 
 
 Luckily there are some ways to go further on this.
-https://github.com/DuPAL-PAL-DUmper is an opensource solution to fire off all different combinations of logic voltages on to a PAL IC. It might be able to get most of the expected behaviour. But it will still need to be written into logic code to burn back to an IC AND it will probably only get 80% of the logic, because it does not know which pins are feedback on themselves (like latches etc) which will require diving into the schematic and real machine to determine what expected states are to finalize it.
+https://github.com/DuPAL-PAL-DUmper is an opensource solution to fire off all different combinations of logic voltages on to a PAL IC. It might be able to get most of the expected behaviour like for the Sequencer memory IC62. But it will still need to be written into logic code to burn back to an IC AND it will probably only get 80% of the logic, because it does not know which pins are feedback on themselves (like latches etc) which will require diving into the schematic and real machine to determine what expected states are to finalize it.
 
 
 These are the involved chips:
@@ -108,7 +108,7 @@ Register Files LSB   - IC88  74S288 LOG (FOUND!)
 Sound Memory Intfc   - IC69  PAL12L6 (Only in SP-12, so not required)
 Sequencer Memory     - IC62  PAL12H6 (need to be brute force read and converted)
 
-Program Memory       - IC130 PAL16R4 (Can be simplified with other logic code by using SRAM instead of complex multiplexing 4416 RAM)
+Program Memory       - IC130 PAL16R4 (Can be simplified with other routing logic code by using SRAM instead of complex multiplexing 4416 RAM, see Plan below)
 ROM Memory           - IC148 PAL16R8 (Only in SP-12, so not required)
 ```
 
